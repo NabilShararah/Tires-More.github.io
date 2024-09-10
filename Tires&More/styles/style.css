@@ -1,0 +1,168 @@
+  body {
+            background-image: url('Images/tires$more.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            margin: 0;
+            padding: 0;
+            height: 100vh; 
+            
+        }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box; 
+}
+
+button,
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover,
+.back-button:hover {
+    background-color: #45a049;
+}
+
+.tire {
+    width: 45%; 
+    float: left;
+    margin: 20px;
+    text-align: center;
+}
+
+.tire .price,
+.tire .name,
+.tire .size {
+    margin: 10px 0;
+}
+
+.tire-image {
+    width: 40%; 
+}
+
+.clearfix {
+    clear: both;
+}
+
+label[for="size"] {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 14px; 
+}
+
+select {
+    width: 40%;
+}
+
+.tireS {
+    width: 10%;
+}
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+a.button:hover {
+    background-color: #45a049; 
+}
+[class*="col-"]{
+    width: 100%;
+}
+@media only screen and(min-width:200px){
+    .col-s-1{ width: 8.33%;}
+    .col-s-2{ width: 16.66%;}
+    .col-s-3{ width: 25%;}
+    .col-s-4{ width: 33.33%;}
+    .col-s-5{ width: 41.66%;}
+    .col-s-6{ width: 50%;}
+    .col-s-7{ width: 58.33%;}
+    .col-s-8{ width: 66.66%;}
+    .col-s-9{ width: 75%;}
+    .col-s-10{ width: 83.33%;}
+    .col-s-11{ width: 91.66%;}
+    .col-s-12{ width: 100%;}
+
+}
+@media only screen and(min-width:1024px){
+    .col-1{ width: 8.33%;}
+    .col-2{ width: 16.66%;}
+    .col-3{ width: 25%;}
+    .col-4{ width: 33.33%;}
+    .col-5{ width: 41.66%;}
+    .col-6{ width: 50%;}
+    .col-7{ width: 58.33%;}
+    .col-8{ width: 66.66%;}
+    .col-9{ width: 75%;}
+    .col-10{ width: 83.33%;}
+    .col-11{ width: 91.66%;}
+    .col-12{ width: 100%;}
+
+}
+.Mystery{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 34px;
+     margin-left: 10%;
+    color: goldenrod;
+    text-align: center;
+
+}
+.asidecr{
+    background-color: gray;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+
+}
+.footer{
+    background-color: black;
+    color: goldenrod;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+
+}

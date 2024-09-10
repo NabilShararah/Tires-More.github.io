@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        function togglePasscodeField() {
+            const role = document.getElementById("role").value;
+            const passcodeField = document.getElementById("passcode-field");
+
+            if (role === "worker" || role === "admin") {
+                passcodeField.style.display = "block";
+            } else {
+                passcodeField.style.display = "none";
+            }
+        }
+    </script>
+       <style>
+        body {
+            background-image: url('Images/tires$more.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            margin: 0;
+            padding: 0;
+            height: 100vh; 
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="php/signup.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="role">Select Role:</label><br>
+        <select name="role" id="role" onchange="togglePasscodeField()">
+            <option value="customer">Customer</option>
+            <option value="worker">Worker</option>
+            <option value="admin">Admin</option>
+        </select>
+        <br>
+        
+        <!-- Passcode field that is initially hidden -->
+        <div id="passcode-field" style="display:none;">
+            <label for="passcode">Enter Passcode:</label>
+            <input type="password" id="passcode" name="passcode">
+        </div>
+        <br>
+        
+        <button type="submit">Sign Up</button>
+        <a href="index.php" class="back-button">Back</a>
+    </form>
+</body>
+</html>
